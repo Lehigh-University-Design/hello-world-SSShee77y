@@ -22,12 +22,24 @@ ul {
 
 body {
     text-align: center;
+    padding: 0;
+    margin: 0;
     background-color: var(--color-theme-dark);
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-theme-dark);
+    border-top: 1px solid var(--color-theme-dark-faded);
+}
+
+/* Bean Image */
+
 .bean-image {
-    padding-top: 30px;
+    padding-block: 20px;
 }
 
 .bean-image img {
@@ -46,19 +58,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-theme-dark);
-    border-bottom: 1px solid var(--color-theme-dark-faded);
     opacity: 0.95;
+    padding-inline: 30px 30px;
 }
 
-.navbar-left {
-    display: inline;
-    margin-left: 25px
-}
-
-.navbar-right {
-    display: inline;
-    margin-right: 30px;
+.navbar p, a, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+    line-height: 0%;
+    margin-block: 20px 20px;
 }
 
 .navbar a {
@@ -72,4 +78,13 @@ body {
 .navbar a.active,
 .navbar a:hover {
     color: var(--color-theme-light);
+}
+
+.navbar-left {
+    text-align: center;
+    display: inline;
+}
+
+.navbar-right {
+    display: inline;
 }
